@@ -1,0 +1,1 @@
+{"name":"Torpedo United","command":["python","-m","team_bot.bot","--model","team_bot/models/planner.json"]}

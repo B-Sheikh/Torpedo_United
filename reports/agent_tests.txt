@@ -1,0 +1,10 @@
+test_ball_forecast_matches_official_free_ball_physics (test_agent.AgentTests.test_ball_forecast_matches_official_free_ball_physics) ... ok
+test_does_not_give_close_defender_an_immediate_interception (test_agent.AgentTests.test_does_not_give_close_defender_an_immediate_interception) ... ok
+test_legal_deterministic_read_only_both_sides (test_agent.AgentTests.test_legal_deterministic_read_only_both_sides) ... ok
+test_protocol_multiple_matches_unknown_and_malformed_message (test_agent.AgentTests.test_protocol_multiple_matches_unknown_and_malformed_message) ... ok
+test_selects_real_first_frame_interception (test_agent.AgentTests.test_selects_real_first_frame_interception) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.308s
+
+OK

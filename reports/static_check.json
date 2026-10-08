@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "archive": "/workspace/scratch/fc592fa5e0f7/convcup/dist/Torpedo_United_Submission.zip",
+  "sha256": "7a999ef3f7fc037963fe801bae0aab1b3757949d93debdf3e667f1ae1ea0de5e",
+  "team_name": "Torpedo United",
+  "command": [
+    "python",
+    "-m",
+    "team_bot.bot",
+    "--model",
+    "team_bot/models/planner.json"
+  ],
+  "compressed_bytes": 7557,
+  "uncompressed_bytes": 18121,
+  "file_count": 7,
+  "dependencies": [],
+  "model_files": [
+    "team_bot/models/planner.json"
+  ],
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,567 @@
+{
+  "config": {
+    "field_width": 100.0,
+    "field_height": 140.0,
+    "goal_width": 36.0,
+    "player_radius": 3.0,
+    "player_speed": 4.0,
+    "ball_radius": 1.5,
+    "ball_speed": 8.0,
+    "possession_radius": 5.0,
+    "kick_distances": [
+      32.0,
+      64.0,
+      96.0
+    ],
+    "obstacle_count": 6,
+    "obstacle_width": 11.0,
+    "obstacle_height": 8.0,
+    "maximum_iterations": 400,
+    "maximum_goals": 7,
+    "possession_limit_iterations": 10,
+    "loose_ball_restart_iterations": 20,
+    "initial_possessor": "player_1"
+  },
+  "summary": {
+    "organizer-rl": {
+      "matches": 6,
+      "wins": 6,
+      "draws": 0,
+      "losses": 0,
+      "goals_for": 29,
+      "goals_against": 3,
+      "max_decision_ms": 68.60545699998966
+    },
+    "simple": {
+      "matches": 6,
+      "wins": 6,
+      "draws": 0,
+      "losses": 0,
+      "goals_for": 27,
+      "goals_against": 0,
+      "max_decision_ms": 69.55765899999733
+    },
+    "aggressive": {
+      "matches": 6,
+      "wins": 6,
+      "draws": 0,
+      "losses": 0,
+      "goals_for": 31,
+      "goals_against": 0,
+      "max_decision_ms": 67.62763300002916
+    },
+    "counter": {
+      "matches": 6,
+      "wins": 5,
+      "draws": 0,
+      "losses": 1,
+      "goals_for": 35,
+      "goals_against": 7,
+      "max_decision_ms": 60.910944999932326
+    }
+  },
+  "matches": [
+    {
+      "opponent": "organizer-rl",
+      "seed": 41001,
+      "side": "player_1",
+      "goals_for": 5,
+      "goals_against": 1,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 4.895942607498114,
+      "max_decision_ms": 68.60545699998966,
+      "events": {
+        "kick": 32,
+        "interception": 12,
+        "player_contact": 49,
+        "bounce": 34,
+        "ball_stopped": 14,
+        "possession": 13,
+        "goal": 6,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "organizer-rl",
+      "seed": 41001,
+      "side": "player_2",
+      "goals_for": 5,
+      "goals_against": 1,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 4.462434682497758,
+      "max_decision_ms": 51.55032199991183,
+      "events": {
+        "kick": 33,
+        "bounce": 31,
+        "interception": 12,
+        "ball_stopped": 15,
+        "possession": 14,
+        "player_contact": 70,
+        "goal": 6,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "organizer-rl",
+      "seed": 41002,
+      "side": "player_1",
+      "goals_for": 4,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.373840070000824,
+      "max_decision_ms": 48.256175000005896,
+      "events": {
+        "kick": 29,
+        "interception": 13,
+        "bounce": 101,
+        "player_contact": 88,
+        "ball_stopped": 11,
+        "possession": 11,
+        "goal": 4,
+        "restart": 4
+      }
+    },
+    {
+      "opponent": "organizer-rl",
+      "seed": 41002,
+      "side": "player_2",
+      "goals_for": 4,
+      "goals_against": 1,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.4899969225003247,
+      "max_decision_ms": 44.18731000009757,
+      "events": {
+        "kick": 30,
+        "bounce": 40,
+        "interception": 13,
+        "player_contact": 132,
+        "ball_stopped": 11,
+        "possession": 11,
+        "goal": 5,
+        "restart": 5
+      }
+    },
+    {
+      "opponent": "organizer-rl",
+      "seed": 41003,
+      "side": "player_1",
+      "goals_for": 6,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.5633579774992086,
+      "max_decision_ms": 56.093843999974524,
+      "events": {
+        "kick": 33,
+        "interception": 15,
+        "bounce": 182,
+        "player_contact": 111,
+        "ball_stopped": 11,
+        "possession": 11,
+        "goal": 6,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "organizer-rl",
+      "seed": 41003,
+      "side": "player_2",
+      "goals_for": 5,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 2.3797178749984482,
+      "max_decision_ms": 59.22008499999265,
+      "events": {
+        "kick": 50,
+        "bounce": 46,
+        "interception": 36,
+        "player_contact": 192,
+        "ball_stopped": 9,
+        "possession": 9,
+        "goal": 5,
+        "restart": 5
+      }
+    },
+    {
+      "opponent": "simple",
+      "seed": 41001,
+      "side": "player_1",
+      "goals_for": 6,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 5.875863620003372,
+      "max_decision_ms": 61.915229999954136,
+      "events": {
+        "kick": 43,
+        "interception": 24,
+        "bounce": 48,
+        "ball_stopped": 12,
+        "possession": 12,
+        "goal": 6,
+        "restart": 6,
+        "player_contact": 62
+      }
+    },
+    {
+      "opponent": "simple",
+      "seed": 41001,
+      "side": "player_2",
+      "goals_for": 5,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 6.074870704997579,
+      "max_decision_ms": 56.69834100001481,
+      "events": {
+        "kick": 42,
+        "bounce": 48,
+        "interception": 24,
+        "ball_stopped": 12,
+        "possession": 12,
+        "player_contact": 60,
+        "goal": 5,
+        "restart": 5
+      }
+    },
+    {
+      "opponent": "simple",
+      "seed": 41002,
+      "side": "player_1",
+      "goals_for": 3,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.9034761250022143,
+      "max_decision_ms": 65.88673399994605,
+      "events": {
+        "kick": 22,
+        "interception": 5,
+        "bounce": 32,
+        "ball_stopped": 14,
+        "possession": 13,
+        "player_contact": 67,
+        "goal": 3,
+        "restart": 3
+      }
+    },
+    {
+      "opponent": "simple",
+      "seed": 41002,
+      "side": "player_2",
+      "goals_for": 3,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.680155864997232,
+      "max_decision_ms": 59.293236999906185,
+      "events": {
+        "kick": 23,
+        "bounce": 26,
+        "interception": 7,
+        "player_contact": 186,
+        "ball_stopped": 13,
+        "possession": 12,
+        "goal": 3,
+        "restart": 3
+      }
+    },
+    {
+      "opponent": "simple",
+      "seed": 41003,
+      "side": "player_1",
+      "goals_for": 5,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 4.092115267502265,
+      "max_decision_ms": 59.21369899999718,
+      "events": {
+        "kick": 31,
+        "interception": 10,
+        "bounce": 26,
+        "ball_stopped": 15,
+        "possession": 15,
+        "player_contact": 117,
+        "goal": 5,
+        "restart": 5
+      }
+    },
+    {
+      "opponent": "simple",
+      "seed": 41003,
+      "side": "player_2",
+      "goals_for": 5,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.4527896800011604,
+      "max_decision_ms": 69.55765899999733,
+      "events": {
+        "kick": 31,
+        "bounce": 26,
+        "interception": 10,
+        "player_contact": 140,
+        "ball_stopped": 15,
+        "possession": 15,
+        "goal": 5,
+        "restart": 5
+      }
+    },
+    {
+      "opponent": "aggressive",
+      "seed": 41001,
+      "side": "player_1",
+      "goals_for": 5,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 4.3132958774975805,
+      "max_decision_ms": 67.62763300002916,
+      "events": {
+        "kick": 28,
+        "player_contact": 122,
+        "bounce": 50,
+        "ball_stopped": 17,
+        "possession": 17,
+        "interception": 5,
+        "goal": 5,
+        "restart": 5
+      }
+    },
+    {
+      "opponent": "aggressive",
+      "seed": 41001,
+      "side": "player_2",
+      "goals_for": 5,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.5457942175005996,
+      "max_decision_ms": 56.69733799993537,
+      "events": {
+        "kick": 28,
+        "bounce": 59,
+        "player_contact": 145,
+        "ball_stopped": 17,
+        "possession": 17,
+        "interception": 5,
+        "goal": 5,
+        "restart": 5
+      }
+    },
+    {
+      "opponent": "aggressive",
+      "seed": 41002,
+      "side": "player_1",
+      "goals_for": 7,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 310,
+      "mean_decision_ms": 6.297239548388051,
+      "max_decision_ms": 55.35085500002879,
+      "events": {
+        "kick": 22,
+        "bounce": 21,
+        "player_contact": 53,
+        "ball_stopped": 8,
+        "possession": 8,
+        "interception": 7,
+        "goal": 7,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "aggressive",
+      "seed": 41002,
+      "side": "player_2",
+      "goals_for": 7,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 308,
+      "mean_decision_ms": 5.645687470778934,
+      "max_decision_ms": 61.940423000010014,
+      "events": {
+        "kick": 21,
+        "bounce": 21,
+        "interception": 7,
+        "ball_stopped": 7,
+        "player_contact": 49,
+        "possession": 7,
+        "goal": 7,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "aggressive",
+      "seed": 41003,
+      "side": "player_1",
+      "goals_for": 4,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.8252125424972405,
+      "max_decision_ms": 48.89836899997135,
+      "events": {
+        "kick": 41,
+        "bounce": 33,
+        "interception": 25,
+        "player_contact": 124,
+        "goal": 4,
+        "restart": 4,
+        "ball_stopped": 11,
+        "possession": 11
+      }
+    },
+    {
+      "opponent": "aggressive",
+      "seed": 41003,
+      "side": "player_2",
+      "goals_for": 3,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 400,
+      "mean_decision_ms": 3.335744720000946,
+      "max_decision_ms": 62.617014000011295,
+      "events": {
+        "kick": 39,
+        "bounce": 32,
+        "interception": 24,
+        "player_contact": 120,
+        "ball_stopped": 12,
+        "possession": 11,
+        "goal": 3,
+        "restart": 3
+      }
+    },
+    {
+      "opponent": "counter",
+      "seed": 41001,
+      "side": "player_1",
+      "goals_for": 7,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 237,
+      "mean_decision_ms": 6.081765561184377,
+      "max_decision_ms": 59.58347699993283,
+      "events": {
+        "kick": 27,
+        "bounce": 9,
+        "interception": 13,
+        "player_contact": 79,
+        "ball_stopped": 7,
+        "possession": 7,
+        "goal": 7,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "counter",
+      "seed": 41001,
+      "side": "player_2",
+      "goals_for": 7,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 231,
+      "mean_decision_ms": 4.9322643809516675,
+      "max_decision_ms": 60.910944999932326,
+      "events": {
+        "kick": 28,
+        "interception": 14,
+        "player_contact": 70,
+        "bounce": 7,
+        "ball_stopped": 7,
+        "possession": 7,
+        "goal": 7,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "counter",
+      "seed": 41002,
+      "side": "player_1",
+      "goals_for": 7,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 312,
+      "mean_decision_ms": 5.907315788462597,
+      "max_decision_ms": 51.18660599998748,
+      "events": {
+        "kick": 33,
+        "bounce": 92,
+        "interception": 19,
+        "player_contact": 83,
+        "ball_stopped": 7,
+        "possession": 7,
+        "goal": 7,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "counter",
+      "seed": 41002,
+      "side": "player_2",
+      "goals_for": 7,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 266,
+      "mean_decision_ms": 4.725526586458502,
+      "max_decision_ms": 44.71773199998097,
+      "events": {
+        "kick": 42,
+        "interception": 28,
+        "bounce": 35,
+        "player_contact": 91,
+        "ball_stopped": 7,
+        "possession": 7,
+        "goal": 7,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "counter",
+      "seed": 41003,
+      "side": "player_1",
+      "goals_for": 0,
+      "goals_against": 7,
+      "outcome": "loss",
+      "iterations": 175,
+      "mean_decision_ms": 8.665463891425134,
+      "max_decision_ms": 24.43571100002373,
+      "events": {
+        "kick": 14,
+        "bounce": 7,
+        "interception": 7,
+        "player_contact": 14,
+        "goal": 7,
+        "restart": 6
+      }
+    },
+    {
+      "opponent": "counter",
+      "seed": 41003,
+      "side": "player_2",
+      "goals_for": 7,
+      "goals_against": 0,
+      "outcome": "win",
+      "iterations": 308,
+      "mean_decision_ms": 6.203405409090825,
+      "max_decision_ms": 58.605175000025156,
+      "events": {
+        "kick": 42,
+        "interception": 28,
+        "player_contact": 217,
+        "bounce": 14,
+        "ball_stopped": 7,
+        "possession": 7,
+        "goal": 7,
+        "restart": 6
+      }
+    }
+  ]
+}

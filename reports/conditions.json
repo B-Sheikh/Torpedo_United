@@ -1,0 +1,808 @@
+{
+  "note": "Only official uses unchanged competition settings. Other cases are stress tests, not competition performance. Unannounced ball physics deliberately leaves inference assumptions unchanged. Fixtures verify protocol behavior, not guaranteed tactical success.",
+  "summary": {
+    "official": {
+      "matches": 4,
+      "wins": 3,
+      "draws": 1,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 86.55182899997271,
+      "drop_balls": 0
+    },
+    "alternate_kickoff": {
+      "matches": 4,
+      "wins": 2,
+      "draws": 2,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 94.94853299997885,
+      "drop_balls": 0
+    },
+    "open_field": {
+      "matches": 4,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 32.9373450000503,
+      "drop_balls": 0
+    },
+    "eight_obstacles": {
+      "matches": 4,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 105.41092899995874,
+      "drop_balls": 0
+    },
+    "narrow_goal": {
+      "matches": 4,
+      "wins": 3,
+      "draws": 1,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 84.21391499996389,
+      "drop_balls": 0
+    },
+    "slower_players": {
+      "matches": 4,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 80.0342229999842,
+      "drop_balls": 0
+    },
+    "faster_players": {
+      "matches": 4,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 95.94065600003887,
+      "drop_balls": 0
+    },
+    "extended_match": {
+      "matches": 4,
+      "wins": 3,
+      "draws": 1,
+      "losses": 0,
+      "illegal_actions": 0,
+      "max_decision_ms": 90.00864600000114,
+      "drop_balls": 0
+    },
+    "unannounced_ball_physics": {
+      "matches": 4,
+      "wins": 3,
+      "draws": 0,
+      "losses": 1,
+      "illegal_actions": 0,
+      "max_decision_ms": 62.958097000091584,
+      "drop_balls": 0
+    }
+  },
+  "matches": [
+    {
+      "condition": "official",
+      "changes": {},
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 4,
+      "goals_against": 3,
+      "iterations": 375,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 84.23349399993185
+    },
+    {
+      "condition": "official",
+      "changes": {},
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 3,
+      "goals_against": 3,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 86.55182899997271
+    },
+    {
+      "condition": "official",
+      "changes": {},
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 322,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 51.10737200004678
+    },
+    {
+      "condition": "official",
+      "changes": {},
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 210,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 26.986018999991757
+    },
+    {
+      "condition": "alternate_kickoff",
+      "changes": {
+        "initial_possessor": "player_2"
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 3,
+      "goals_against": 3,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 94.94853299997885
+    },
+    {
+      "condition": "alternate_kickoff",
+      "changes": {
+        "initial_possessor": "player_2"
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 3,
+      "goals_against": 3,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 88.79477599998609
+    },
+    {
+      "condition": "alternate_kickoff",
+      "changes": {
+        "initial_possessor": "player_2"
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 210,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 26.856704000010723
+    },
+    {
+      "condition": "alternate_kickoff",
+      "changes": {
+        "initial_possessor": "player_2"
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 322,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 59.95037500008493
+    },
+    {
+      "condition": "open_field",
+      "changes": {
+        "obstacle_count": 0
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 2,
+      "goals_against": 1,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 21.427631000051406
+    },
+    {
+      "condition": "open_field",
+      "changes": {
+        "obstacle_count": 0
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 1,
+      "goals_against": 0,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 29.548174000069594
+    },
+    {
+      "condition": "open_field",
+      "changes": {
+        "obstacle_count": 0
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 6,
+      "goals_against": 0,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 32.9373450000503
+    },
+    {
+      "condition": "open_field",
+      "changes": {
+        "obstacle_count": 0
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 308,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 22.37302500009264
+    },
+    {
+      "condition": "eight_obstacles",
+      "changes": {
+        "obstacle_count": 8,
+        "obstacle_width": 9.0,
+        "obstacle_height": 7.0
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 233,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 103.85479599995051
+    },
+    {
+      "condition": "eight_obstacles",
+      "changes": {
+        "obstacle_count": 8,
+        "obstacle_width": 9.0,
+        "obstacle_height": 7.0
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 238,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 105.41092899995874
+    },
+    {
+      "condition": "eight_obstacles",
+      "changes": {
+        "obstacle_count": 8,
+        "obstacle_width": 9.0,
+        "obstacle_height": 7.0
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 259,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 72.97279499994147
+    },
+    {
+      "condition": "eight_obstacles",
+      "changes": {
+        "obstacle_count": 8,
+        "obstacle_width": 9.0,
+        "obstacle_height": 7.0
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 196,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 17.509404000065842
+    },
+    {
+      "condition": "narrow_goal",
+      "changes": {
+        "goal_width": 20.0
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 2,
+      "goals_against": 1,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 84.21391499996389
+    },
+    {
+      "condition": "narrow_goal",
+      "changes": {
+        "goal_width": 20.0
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 2,
+      "goals_against": 2,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 83.06515700007822
+    },
+    {
+      "condition": "narrow_goal",
+      "changes": {
+        "goal_width": 20.0
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 291,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 73.47808700001224
+    },
+    {
+      "condition": "narrow_goal",
+      "changes": {
+        "goal_width": 20.0
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 210,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 31.569859000001088
+    },
+    {
+      "condition": "slower_players",
+      "changes": {
+        "player_speed": 3.0
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 6,
+      "goals_against": 0,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 67.01092100001915
+    },
+    {
+      "condition": "slower_players",
+      "changes": {
+        "player_speed": 3.0
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 5,
+      "goals_against": 0,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 80.0342229999842
+    },
+    {
+      "condition": "slower_players",
+      "changes": {
+        "player_speed": 3.0
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 6,
+      "goals_against": 0,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 72.84097700005532
+    },
+    {
+      "condition": "slower_players",
+      "changes": {
+        "player_speed": 3.0
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 238,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 31.598680000001877
+    },
+    {
+      "condition": "faster_players",
+      "changes": {
+        "player_speed": 5.0
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 332,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 95.94065600003887
+    },
+    {
+      "condition": "faster_players",
+      "changes": {
+        "player_speed": 5.0
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 350,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 84.67046900000241
+    },
+    {
+      "condition": "faster_players",
+      "changes": {
+        "player_speed": 5.0
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 133,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 36.59104999996998
+    },
+    {
+      "condition": "faster_players",
+      "changes": {
+        "player_speed": 5.0
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 126,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 24.569872000029136
+    },
+    {
+      "condition": "extended_match",
+      "changes": {
+        "maximum_iterations": 800,
+        "maximum_goals": 15
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 7,
+      "goals_against": 6,
+      "iterations": 800,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 88.9132749999817
+    },
+    {
+      "condition": "extended_match",
+      "changes": {
+        "maximum_iterations": 800,
+        "maximum_goals": 15
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 6,
+      "goals_against": 6,
+      "iterations": 800,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 90.00864600000114
+    },
+    {
+      "condition": "extended_match",
+      "changes": {
+        "maximum_iterations": 800,
+        "maximum_goals": 15
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 15,
+      "goals_against": 0,
+      "iterations": 562,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 51.77455199998349
+    },
+    {
+      "condition": "extended_match",
+      "changes": {
+        "maximum_iterations": 800,
+        "maximum_goals": 15
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 15,
+      "goals_against": 0,
+      "iterations": 450,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 28.092611000033685
+    },
+    {
+      "condition": "unannounced_ball_physics",
+      "changes": {
+        "ball_speed": 10.0,
+        "kick_distances": [
+          40.0,
+          80.0,
+          120.0
+        ]
+      },
+      "seed": 83001,
+      "side": "player_1",
+      "opponent": "counter",
+      "goals_for": 0,
+      "goals_against": 7,
+      "iterations": 168,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 62.958097000091584
+    },
+    {
+      "condition": "unannounced_ball_physics",
+      "changes": {
+        "ball_speed": 10.0,
+        "kick_distances": [
+          40.0,
+          80.0,
+          120.0
+        ]
+      },
+      "seed": 83001,
+      "side": "player_2",
+      "opponent": "counter",
+      "goals_for": 5,
+      "goals_against": 0,
+      "iterations": 400,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 53.31679599999006
+    },
+    {
+      "condition": "unannounced_ball_physics",
+      "changes": {
+        "ball_speed": 10.0,
+        "kick_distances": [
+          40.0,
+          80.0,
+          120.0
+        ]
+      },
+      "seed": 83002,
+      "side": "player_1",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 187,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 49.77735999989363
+    },
+    {
+      "condition": "unannounced_ball_physics",
+      "changes": {
+        "ball_speed": 10.0,
+        "kick_distances": [
+          40.0,
+          80.0,
+          120.0
+        ]
+      },
+      "seed": 83002,
+      "side": "player_2",
+      "opponent": "aggressive",
+      "goals_for": 7,
+      "goals_against": 0,
+      "iterations": 196,
+      "illegal_actions": 0,
+      "drop_balls": 0,
+      "max_decision_ms": 26.390556000023935
+    }
+  ],
+  "fixtures": [
+    {
+      "scenario": "ahead_late",
+      "side": "player_1",
+      "iterations_exercised": 10,
+      "illegal_actions": 0,
+      "max_decision_ms": 59.33266899990031,
+      "score": {
+        "player_1": 6,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "behind_late",
+      "side": "player_1",
+      "iterations_exercised": 10,
+      "illegal_actions": 0,
+      "max_decision_ms": 55.080791000023055,
+      "score": {
+        "player_1": 0,
+        "player_2": 6
+      }
+    },
+    {
+      "scenario": "tied_late",
+      "side": "player_1",
+      "iterations_exercised": 10,
+      "illegal_actions": 0,
+      "max_decision_ms": 57.66886600008547,
+      "score": {
+        "player_1": 0,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "contact",
+      "side": "player_1",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 55.49293100000341,
+      "score": {
+        "player_1": 1,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "loose_ball",
+      "side": "player_1",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 59.329414999979235,
+      "score": {
+        "player_1": 0,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "moving_ball",
+      "side": "player_1",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 54.64393399995515,
+      "score": {
+        "player_1": 0,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "obstacle_edge",
+      "side": "player_1",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 38.00870899999609,
+      "score": {
+        "player_1": 1,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "ahead_late",
+      "side": "player_2",
+      "iterations_exercised": 10,
+      "illegal_actions": 0,
+      "max_decision_ms": 52.75594700003694,
+      "score": {
+        "player_1": 0,
+        "player_2": 6
+      }
+    },
+    {
+      "scenario": "behind_late",
+      "side": "player_2",
+      "iterations_exercised": 10,
+      "illegal_actions": 0,
+      "max_decision_ms": 52.09280700000818,
+      "score": {
+        "player_1": 6,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "tied_late",
+      "side": "player_2",
+      "iterations_exercised": 10,
+      "illegal_actions": 0,
+      "max_decision_ms": 53.426811000008456,
+      "score": {
+        "player_1": 0,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "contact",
+      "side": "player_2",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 53.15430899997864,
+      "score": {
+        "player_1": 0,
+        "player_2": 1
+      }
+    },
+    {
+      "scenario": "loose_ball",
+      "side": "player_2",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 58.23734500006594,
+      "score": {
+        "player_1": 0,
+        "player_2": 0
+      }
+    },
+    {
+      "scenario": "moving_ball",
+      "side": "player_2",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 56.09459900006186,
+      "score": {
+        "player_1": 0,
+        "player_2": 1
+      }
+    },
+    {
+      "scenario": "obstacle_edge",
+      "side": "player_2",
+      "iterations_exercised": 40,
+      "illegal_actions": 0,
+      "max_decision_ms": 54.94072200008304,
+      "score": {
+        "player_1": 0,
+        "player_2": 1
+      }
+    }
+  ]
+}

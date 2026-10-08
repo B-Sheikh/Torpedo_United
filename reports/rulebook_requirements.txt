@@ -1,0 +1,141 @@
+Conv-Cup '26: FIFA of AI
+Conducted by: Machine Learning Division, CyberLabs 
+Format: Team Contest
+Team size: 2 to 4 participants
+Prize Pool: Rs. 10,500 (1st: Rs. 6,000 | 2nd: Rs. 3,000 | 3rd: Rs. 1,500)
+Flow of the Event
+1. Registration: Teams of 2 to 4 participants register before the event through Unstop.
+2. Opening Ceremony: The organizing team introduces the game format, arena rules, action interface, evaluation procedure, and submission requirements.
+3. Environment & Rules Reveal: Participants receive the official game specification and simulator interface. The game is a deterministic 2D soccer simulation with two AI-controlled players, one ball, two opposite goals, and procedurally generated symmetric obstacles.
+4. Development / Training Phase: Teams build, train, and test their models using the provided simulator. The same game rules and fixed environment parameters are used for all participants.
+5. Submission: Teams submit their AI agent according to the prescribed interface. The submitted agent must provide an action for each game iteration from the current game state.
+6. Evaluation Matches: Submitted models compete head-to-head over multiple matches using different random seeds and obstacle configurations. The exact number of matches and tournament structure will be announced by the organizers.
+7. Judging: Match outcomes are determined by goals scored within the allotted number of game iterations. In case of a tie, additional iterations are provided according to the event tie-break procedure.
+8. Result & Prize Distribution: The final leaderboard is announced, followed by result declaration and prize distribution.
+Rules
+• All participants are evaluated using the same game engine and fixed environment parameters.
+• The game engine enforces movement restrictions, ball physics, collisions, possession, kicking eligibility, goal detection, scoring, restart handling, and match termination.
+• Participants may only control their own player through the prescribed action interface.
+• The submitted model must not directly modify the game state, simulator, or game engine behaviour.
+• Both players have identical movement, size, collision, and kicking capabilities. There are no fixed goalkeeper roles, fouls, offside rules, or restricted player zones.
+• Both players choose actions simultaneously at every game iteration. The engine then updates positions, ball movement, collisions, possession, and goal conditions.
+• Possession is determined automatically by the game engine, and only the player in possession may kick the ball.
+• The ball reflects from the field boundary and static obstacles according to the predefined collision rules, and a moving ball can be intercepted by the opposing player.
+• Obstacle positions are generated from a random seed and mirrored across the field centre. Obstacles remain stationary during a match.
+• The same random seed, starting state, and sequence of actions must produce the same game outcome.
+• Use of external APIs is not allowed.
+• Hidden evaluation seeds and obstacle configurations may be used.
+• Any attempt to bypass the prescribed interface, alter the simulator, or interfere with another participant's evaluation environment may result in disqualification.
+Deliverables
+• Executable/submittable AI agent following the prescribed interface.
+• Source code of the submitted agent.
+• Brief documentation describing the submitted system and its use of the state/action interface.
+• Any additional dependency or execution instructions required by the competition platform.
+Evaluation & Ranking
+• The competition evaluates submitted AI agents through head-to-head matches in the deterministic simulator.
+• Matches use different random seeds and obstacle configurations to test agents across multiple valid arena layouts.
+• Primary match outcome is based on the number of goals scored within the allotted game iterations.
+• If the score is tied when the allotted iterations end, additional iterations are played according to the tie-break procedure until a winner is determined.
+Core Game Rules (Summary)
+• The arena is a flat rectangular field with two goals on opposite sides; the outer boundary acts as a solid wall.
+• There is exactly one ball and exactly two AI-controlled players. Either player may attack or defend anywhere on the field.
+• Players move at fixed speed using eight directional actions plus an optional stationary action.
+• A goal immediately ends the current play. The field resets to the standard starting configuration, and the player who conceded the previous goal receives the next kickoff.
+• Each match has a maximum number of game iterations and a maximum number of goals. The match ends when either limit is reached.
+• Every match is reproducible from its seed, starting state, and action sequence
+Github access - https://github.com/Anukul1712/Mlfootball_env
+“AI Soccer Competition - Participant Development Kit
+Welcome to the AI Soccer competition. This repository contains the complete participant kit needed to create, train, watch, test, validate, and package a football bot.
+The participant kit is self-contained inside participants/.
+What is included
+The official game environment, physics, obstacles, and rules
+A starter submission bot
+The actual trained Balanced United RL organizer bot as a fixed training opponent
+A simpler source-readable opponent
+Reinforcement-learning, curriculum, and shared-policy self-play tools
+A live browser match viewer
+A replay viewer with stepping and event navigation
+Local process validation and submission safety checks
+A clean submission ZIP packager
+Detailed training and improvement guidance
+Balanced United RL is supplied as a frozen reference opponent. Training does not modify its weights. Your bot can train against it, rotate through other opponents, and train its own shared policy from both sides using self-play. Keeping the organizer RL bot fixed gives every participant the same reproducible benchmark.
+Requirements
+Python 3.11 or newer
+Windows PowerShell for the commands shown below
+No third-party dependency is required by the starter kit
+Start here
+Open PowerShell in the repository and enter the participant kit:
+cd participants
+Confirm that the standalone environment works:
+python -m unittest discover -s tests -v
+Run the starter bot against Balanced United RL and watch it in the browser:
+python live_viewer.py
+The terminal prints a localhost address and normally opens it automatically. Keep the terminal running while viewing the match; press Ctrl+C when finished.
+Create your team
+Copy the starter submission:
+Copy-Item -Recurse submission_kit my_team
+Then:
+Change the public team name in my_team/submission.json.
+Edit my_team/team_bot/policy.py, or train a compatible model.
+Store final model files under my_team/team_bot/models/.
+Update the --model path in my_team/submission.json.
+Keep standard output exclusively for JSON actions. Write concise diagnostics to standard error.
+Train against the organizer RL bot
+Start with a short check:
+python train_bot.py `
+  --episodes 100 `
+  --opponents organizer-rl `
+  --self-play-ratio 0 `
+  --output my_team/team_bot/models/trained_policy.json
+Then use a longer curriculum with self-play:
+python train_bot.py `
+  --episodes 5000 `
+  --opponents curriculum `
+  --self-play-ratio 0.35 `
+  --resume my_team/team_bot/models/trained_policy.json `
+  --output my_team/team_bot/models/trained_policy.json
+The curriculum rotates:
+Balanced United RL
+The simple readable baseline
+An aggressive attacking policy
+A counter-attacking policy
+Shared-policy self-play from both player perspectives
+Do not evaluate progress using only training reward or one seed. Compare old and new models on the same unseen seeds, on both sides, and record match results and action errors.
+Watch your bot
+After my_team/submission.json points to your trained model:
+python live_viewer.py `
+  --submission my_team/submission.json `
+  --opponent organizer-rl `
+  --seed 101
+Try several unseen seeds. Use the easier opponent when debugging basic behavior:
+python live_viewer.py `
+  --submission my_team/submission.json `
+  --opponent simple `
+  --seed 202
+Local matches write JSONL replays under participants/logs/. Inspect the newest replay with:
+python replay_viewer.py
+Validate and package your submission
+Your process must complete matches on both sides with zero action errors:
+python validate_submission.py `
+  --submission my_team/submission.json `
+  --matches-per-side 2
+Create and inspect the final archive:
+python package_submission.py my_team dist/my-team.zip
+python check_submission.py dist/my-team.zip --report dist/my-team-report.json
+Submit only dist/my-team.zip. Do not submit this entire development repository, the environment, training logs, or the bundled organizer RL model. Keep the SHA-256 printed by the checker and do not modify the ZIP after validation.
+Competition format
+The event uses double elimination:
+The first series loss moves a team into the Elimination Bracket.
+The second series loss eliminates the team.
+A bracket tie may contain one to six games and alternates sides.
+Aggregate goals decide multi-game ties.
+Aggregate draws use a recorded seeded penalty shootout.
+A reset final is played if the previously undefeated finalist loses the first Grand Final.
+Every fixture receives its own deterministic seed.
+Safety and fairness
+Submissions must pass both the static archive checker and live process validation. Among other published limits, submissions may not use networking, subprocesses, shell execution, dynamic code execution, unsafe serialization, secret files, filesystem mutation, unapproved dependencies, or working-directory escapes. Action responses must arrive within two seconds and remain under 8,192 bytes.
+Read the complete rules before final training or submission:
+Participant quick-start and workflow
+Complete training and submission guide
+Organizer RL reference details
+”

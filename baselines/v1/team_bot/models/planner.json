@@ -1,0 +1,1 @@
+{"format":"torpedo-planner-v1","ball_radius":1.5,"ball_speed":8.0,"kick_distances":[32.0,64.0,96.0],"carry_risk":3.0,"shot_risk":60.0,"shot_threshold":35.0}

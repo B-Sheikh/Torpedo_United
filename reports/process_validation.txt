@@ -1,0 +1,52 @@
+GOAL: player_1 | Torpedo United 1-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 2-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 3-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 4-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 5-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 6-0 Balanced United RL Reference
+match=1 seed=7000 side=player_1 score=6-0 action_errors=0
+GOAL: player_2 | Balanced United RL Reference 0-1 Torpedo United
+GOAL: player_1 | Balanced United RL Reference 1-1 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-2 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-3 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-4 Torpedo United
+match=2 seed=7000 side=player_2 score=1-4 action_errors=0
+GOAL: player_2 | Torpedo United 0-1 Balanced United RL Reference
+match=3 seed=7001 side=player_1 score=0-1 action_errors=0
+GOAL: player_2 | Balanced United RL Reference 0-1 Torpedo United
+GOAL: player_1 | Balanced United RL Reference 1-1 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-2 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-3 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-4 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-5 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-6 Torpedo United
+match=4 seed=7001 side=player_2 score=1-6 action_errors=0
+GOAL: player_1 | Torpedo United 1-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 2-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 3-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 4-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 5-0 Balanced United RL Reference
+GOAL: player_2 | Torpedo United 5-1 Balanced United RL Reference
+GOAL: player_2 | Torpedo United 5-2 Balanced United RL Reference
+match=5 seed=7002 side=player_1 score=5-2 action_errors=0
+GOAL: player_1 | Balanced United RL Reference 1-0 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-1 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-2 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 1-3 Torpedo United
+match=6 seed=7002 side=player_2 score=1-3 action_errors=0
+GOAL: player_1 | Torpedo United 1-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 2-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 3-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 4-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 5-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 6-0 Balanced United RL Reference
+GOAL: player_1 | Torpedo United 7-0 Balanced United RL Reference
+match=7 seed=7003 side=player_1 score=7-0 action_errors=0
+GOAL: player_2 | Balanced United RL Reference 0-1 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 0-2 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 0-3 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 0-4 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 0-5 Torpedo United
+GOAL: player_2 | Balanced United RL Reference 0-6 Torpedo United
+match=8 seed=7003 side=player_2 score=0-6 action_errors=0
+Validation complete: matches=8, participant action errors=0

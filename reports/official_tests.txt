@@ -1,0 +1,10 @@
+test_official_environment_runs_without_organizer_folder (test_standalone.StandaloneParticipantKitTests.test_official_environment_runs_without_organizer_folder) ... ok
+test_organizer_rl_model_matches_manifest (test_standalone.StandaloneParticipantKitTests.test_organizer_rl_model_matches_manifest) ... ok
+test_reference_and_rl_actions_are_legal (test_standalone.StandaloneParticipantKitTests.test_reference_and_rl_actions_are_legal) ... ok
+test_web_viewer_assets_and_demo_config_exist (test_standalone.StandaloneParticipantKitTests.test_web_viewer_assets_and_demo_config_exist) ... ok
+test_web_viewer_serves_ui_and_state_api (test_standalone.StandaloneParticipantKitTests.test_web_viewer_serves_ui_and_state_api) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.891s
+
+OK

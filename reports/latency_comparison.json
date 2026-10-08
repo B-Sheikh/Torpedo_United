@@ -1,0 +1,18 @@
+{
+  "v1": {
+    "observations": 204,
+    "mean_ms": 7.435911642143729,
+    "median_ms": 1.0941470000034315,
+    "p95_ms": 42.014053000002605,
+    "max_ms": 105.5741410000337
+  },
+  "v2": {
+    "observations": 204,
+    "mean_ms": 4.205731063712383,
+    "median_ms": 1.0511919999771635,
+    "p95_ms": 21.067081999945003,
+    "max_ms": 49.70101499998236
+  },
+  "mean_speedup": 1.7680425898607217,
+  "note": "Same observations, alternating call order on one machine. Run without other heavy workloads for useful timing comparisons; timings are not universal runtime guarantees."
+}
